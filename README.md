@@ -1,24 +1,36 @@
-# README
+# Drop
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Depot is a web application for a fictional storefront.
 
-Things you may want to cover:
+### Create new app
 
-* Ruby version
+```sh
+rails new depot --css tailwind
+```
 
-* System dependencies
+Go to newly created directory:
 
-* Configuration
+```sh
+cd depot
+```
 
-* Database creation
+Create the first scaffold for the Product model:
 
-* Database initialization
+```sh
+rails g scaffold Product \
+title:string description:text image_url:string price:decimal
+```
 
-* How to run the test suite
+After creating this scaffold, we will update the newly created migration file to change the decimal precision of the price attribute.
 
-* Services (job queues, cache servers, search engines, etc.)
+Run the migration:
 
-* Deployment instructions
+```sh
+rails db:migrate
+```
 
-* ...
+To run in development:
+
+```sh
+bin/dev
+```
