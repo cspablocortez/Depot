@@ -34,3 +34,15 @@ To run in development:
 ```sh
 bin/dev
 ```
+
+### Update Listings Page with Seed Data
+
+Add the following in their corresponding directories. 
+
+!https://media.pragprog.com/titles/rails7/code/rails7/depot_a/db/seeds.rb
+
+!https://media.pragprog.com/titles/rails7/code/rails7/depot_a/app/assets/images/
+
+
+Update `app/views/products/index.html.erb` to create a table.
+
