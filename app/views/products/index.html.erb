@@ -23,6 +23,7 @@
       <tbody>
       <% @products.each do |product| %>
         <tr class="<%= cycle('bg-green-50', 'bg-white') %>">
+        
           <td class="px-2 py-3">
             <%= image_tag(product.image_url, class: 'w-40') %>
           </td>
@@ -32,6 +33,7 @@
             <p>
               <%= truncate(strip_tags(product.description), length: 80) %>
             </p>
+              <%= number_to_currency(product.price) %>
           </td>
 
           <td class="px-3">
