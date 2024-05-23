@@ -1,4 +1,4 @@
-# Drop
+# Depot
 
 Depot is a web application for a fictional storefront.
 
